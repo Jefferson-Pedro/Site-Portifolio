@@ -56,5 +56,6 @@ function headerShadow(){
     sr.reveal('.project-box',{interval: 200})
 
 /* -------- HEADINGS -------- */
+    sr.reveal('.top-header',{})
 
 /* -------- SCROLL REVEAL LEFT_RIGHT ANIMATION -------- */
