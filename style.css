@@ -328,6 +328,26 @@ h3{
     background: var(--first-color-hover);   
 }
 
+/* ----- ABOUT / SKILL BOX ----- */
+.skills-box{
+    margin: 10px;
+}
+.skills-header{
+    margin-bottom: 30px;
+}
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.skills-list span{
+    font-size: 14px;
+    background: var(--first-color);
+    color: var(--color-white);
+    padding: 2px 10px;
+    border-radius: 5px;
+}
+
 /* ----- MEDIA QUERY = 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px) {
     .featured-text{
