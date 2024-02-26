@@ -440,6 +440,88 @@ h3{
     z-index: 2;
 }
 
+/* ----- CONTACT FORM ----- */
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.form-inputs{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+.input-field{
+    width: 50%;
+    height: 55px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding-inline: 20px;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    height: 250px;
+    background: transparent;
+    border: 2px solid #AAA;
+    border-radius: 10px;
+    padding: 15px 20px;
+    outline: none;
+    resize: none; 
+}
+.form-button > .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--second-color);
+    color: var(--color-white);
+}
+.form-button > .btn:hover{
+    background: #00B5E7;
+}
+.form-button i{
+    font-size: 18px;
+}
+
+/* ----- FOOTER BOX ----- */
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    background: #F8F8F8;
+    padding-block: 40px 60px;
+}
+.top-footer p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.middle-footer .footer-menu{
+    display: flex;
+}
+.footer_menu_list{
+    list-style: none;
+}
+.footer_menu_list a{
+    text-decoration: none;
+    color: var(--text-color-second);
+    font-weight: 500;
+    margin-inline: 20px;
+}
+.footer-social-icons{
+    display: flex;
+    gap: 30px;   
+}
+.bottom-footer{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
 
 /* ----- MEDIA QUERY = 1024px / RESPONSIVE ----- */
 @media only screen and (max-width: 1024px) {
@@ -519,7 +601,7 @@ h3{
         justify-content: center;
         width: 100%;
     }
-    .about-info{
+    .about-inf, .contact-info{
         width: 100%;
     }
     .project-container{
@@ -536,6 +618,12 @@ h3{
         font-size: 40px;
     }
     .project-box{
+        width: 100%;
+    }
+    .form-inputs{
+        flex-direction: column;
+    }
+    .input-field{
         width: 100%;
     }
 }
