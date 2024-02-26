@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,45 +17,82 @@
 
     <title>Portifólio | Jefferson Pedro</title>
 </head>
+
 <body>
     <div class="container">
-    <!------------------------------ HEADER -------------------------------->
-    <nav id="header">
-        <div class="nav-logo">
-            <p class="nav-name">JP</p>
-            <span>.</span>
-        </div>
-        <div class="nav-menu" id="myNavMenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link">Inicio</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">Sobre</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projetos</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contato</a>
-                    <div class="circle"></div>
-                </li>
-            </ul>
-        </div>
-        <div class="nav-button">
-            <button class="btn">Download CV <i class="fa-regular fa-file-lines"></i></button>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="fa-solid fa-bars" style="color: #6563ff;" onclick="menuFunction()"></i>
-        </div>
-    </nav>
+        <!------------------------------ HEADER -------------------------------->
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">JP</p>
+                <span>.</span>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link">Inicio</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">Sobre</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projetos</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contato</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn">Download CV <i class="fa-regular fa-file-lines"
+                        style="color: #6563ff;"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="fa-solid fa-bars" style="color: #6563ff;" onclick="menuFunction()"></i>
+            </div>
+        </nav>
 
-    <!------------------------------ MAIN -------------------------------->
+        <!------------------------------ MAIN -------------------------------->
+        <main class="wrapper">
+            <!-- -------------- FEATURED BOX ---------------- -->
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-text-card">
+                        <span>Jefferson Pedro</span>
+                    </div>
+                    <div class="featured-name">
+                        <p>Eu sou <span class="typedText">Desenvolvedor</span></p>
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Desenvolvedor Backend Java em treinamento, buscando oportunidades para aprimorar minhas
+                            habilidades e
+                            contribuir para o sucesso da sua empresa.
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <button class="btn blue-btn">Contrate-me</button>
+                        <button class="btn ">Download CV <i class="fa-solid fa-file-lines"
+                                style="color: #6563ff;"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="icon"><i class="fa-brands fa-github"></i></div>
+                        <div class="icon"><i class="fa-brands fa-google-plus"></i></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="./assets/img/profile-2-azul.png" alt="foto-perfil-">
+                    </div>
+                </div>
+            </section>
+        </main>
 
-    <!------------------------------ FOOTER -------------------------------->
+        <!------------------------------ FOOTER -------------------------------->
 
     </div>
 
@@ -64,4 +102,5 @@
     <script src="./script.js"></script>
 
 </body>
+
 </html>
