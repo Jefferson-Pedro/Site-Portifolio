@@ -372,6 +372,7 @@ h3{
     justify-content: space-between;
     gap: 15px;
     flex-wrap: wrap;
+    background-color: rgba(244, 191, 123, 0.723);
 }
 .project-box{
     position: relative;
