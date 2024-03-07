@@ -24,7 +24,6 @@ function headerShadow(){
         navHeader.style.height = "90px";
         navHeader.style.lineHeight = "90px";
     }
-
 };
 
 /* -------- TYPING EFFECT -------- */
@@ -43,6 +42,12 @@ function headerShadow(){
         duration: 2000,
         reset: true     
     });
+
+    /* -------- SCROLL TO TOP -------- */
+    function scrollToTop(){
+        const aboutSection = document.getElementById('home');
+        aboutSection.scrollIntoView({ behavior: 'smooth'});
+    }
 
 /* -------- HOME -------- */
     sr.reveal('.featured-text-card',{});
