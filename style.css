@@ -543,6 +543,7 @@ footer{
     row-gap: 30px;
     background: #F8F8F8;
     padding-block: 40px 60px;
+    width: 100vw;
 }
 .top-footer p{
     font-size: 25px;
