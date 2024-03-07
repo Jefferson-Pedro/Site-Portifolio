@@ -358,6 +358,22 @@ h3{
     background: var(--first-color-hover);   
 }
 
+/* -------- SCROLL TO TOP -------- */
+.btn-backtop{
+    border-radius: 9999px;
+}
+.back-to-back{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: var(--first-color);
+    color: var(--color-white);
+    padding: 10px 17px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 /* ----- ABOUT / SKILL BOX ----- */
 .skills-box{
     margin: 10px;
@@ -388,7 +404,7 @@ h3{
     flex-wrap: wrap;
     background-color: rgba(244, 191, 123, 0.723);
 }
-.project-box{
+/* .project-box{
     position: relative;
     display: flex;
     justify-content: center;
@@ -429,7 +445,7 @@ h3{
 .project-box:hover.project-box > label{
     color: var(--color-white);
     z-index: 2;
-}
+} */
 
 /* ----- CONTACT BOX ----- */
 
