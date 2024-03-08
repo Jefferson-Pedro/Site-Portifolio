@@ -49,6 +49,18 @@ function headerShadow(){
         aboutSection.scrollIntoView({ behavior: 'smooth'});
     }
 
+    window.addEventListener('scroll', function(){
+        const aboutSection = this.document.getElementById('home');
+        const scrollTopBtn = this.document.querySelector('.btn-backtop');
+
+          // Verificar se a posição de rolagem é maior que a posição da seção "home"
+        if(window.scrollY > aboutSection.offsetLeft){
+            scrollTopBtn.style.display = 'block';  // Se sim, mostrar o botão de seta
+        }else{
+            scrollTopBtn.style.display = 'none';  // Caso contrário, ocultar o botão de seta
+        }
+    }).
+
 /* -------- HOME -------- */
     sr.reveal('.featured-text-card',{});
     sr.reveal('.featured-name',{delay: 100});
