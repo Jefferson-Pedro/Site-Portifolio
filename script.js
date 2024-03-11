@@ -44,22 +44,37 @@ function headerShadow(){
     });
 
     /* -------- SCROLL TO TOP -------- */
-    function scrollToTop(){
-        const aboutSection = document.getElementById('home');
-        aboutSection.scrollIntoView({ behavior: 'smooth'});
-    }
-
-    window.addEventListener('scroll', function(){
-        const aboutSection = this.document.getElementById('home');
-        const scrollTopBtn = this.document.querySelector('.btn-backtop');
-
-          // Verificar se a posição de rolagem é maior que a posição da seção "home"
-        if(window.scrollY > aboutSection.offsetLeft){
-            scrollTopBtn.style.display = 'block';  // Se sim, mostrar o botão de seta
+    window.addEventListener('DOMContentLoaded', (event) => {
+        const aboutSection = document.getElementById('about');
+        const scrollTopBtn = document.querySelector('.btn-backtop');
+    
+        if(window.scrollY > aboutSection.offsetTop){
+            scrollTopBtn.style.display = 'block';
         }else{
-            scrollTopBtn.style.display = 'none';  // Caso contrário, ocultar o botão de seta
+            scrollTopBtn.style.display = 'none';
         }
-    }).
+
+         // Adiciona um ouvinte de evento ao botão para chamar a função scrollToTop quando clicado
+        scrollTopBtn.addEventListener('click', scrollToTop);
+    });
+    
+    window.addEventListener('scroll', function(){
+        const aboutSection = document.getElementById('about');
+        const scrollTopBtn = document.querySelector('.btn-backtop');
+    
+        if(window.scrollY > aboutSection.offsetTop){
+            scrollTopBtn.style.display = 'block';
+        }else{
+            scrollTopBtn.style.display = 'none';
+        }
+    });
+
+    function scrollToTop(){
+        const homeSection = document.getElementById('home');
+        homeSection.scrollIntoView({ behavior: 'smooth'});
+    }
+    
+    
 
 /* -------- HOME -------- */
     sr.reveal('.featured-text-card',{});
